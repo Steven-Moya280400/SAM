@@ -26,30 +26,31 @@ button {
     border: none;
 }
 
-.container {
+.contenitore {
     padding: 0 20px;
     max-width: 1440px;
     margin: 0 auto;
 }
 
 body {
-    background: url(../img/background.png);
     margin: 0;
     padding: 0;
+    background: url(../img/background.png);
 }
 
-header {
-    background: url(../img/headerBackground.png);
-    padding-bottom: 68px;
-}
-
-.btnPrimary{
+.btnPrimary {
     background-color: var(--yellow);
     font-size: 30px;
     color: var(--black);
     line-height: 38px;
     width: max-content;
     display: block;
+    text-align: center;
+}
+
+header {
+    background: url(../img/headerBackground.png);
+    padding-bottom: 68px;
 }
 
 header .lstMenu {
@@ -73,23 +74,120 @@ header .lstMenu .itemMenu.active {
     background-color: var(--yellow);
 }
 
-.banner .bannerContent{
+section{
+    overflow: hidden;
+}
+
+section:not(:first-child) {
+    margin-top: 190px;
+}
+
+.improntaDigitaleContenitore {
+    position: relative;
+}
+
+.improntaDigitale {
+    position: absolute;
+    opacity: 0.3;
+    z-index: 10;
+}
+
+.InformazioniBanner .bannerContenuto {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.banner .bannerContent .info .title{
+.InformazioniBanner .imgBanner{
+    max-width: 100%;
+}
+
+.InformazioniBanner .bannerContenuto .informazioni .titolo {
     font-family: "Aku & Kamu";
     font-size: 48px;
-    max-width: 447px;
     margin-bottom: 17px;
 }
 
-.banner .bannerContent .info .description{
+.InformazioniBanner .bannerContenuto .informazioni .descrizione {
     font-family: "Special Elite";
     font-size: 15px;
     margin-bottom: 68px;
-    max-width: 374px;
+}
+
+.Banner {
+    text-align: center;
+}
+
+.Banner .imgBanner {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.PreFooter .preFooterContenuto {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.PreFooter .preFooterContenuto .contenuto {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PreFooter .preFooterContenuto .contenuto .azioni {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Disclaimer {
+    padding-bottom: 198px;
+}
+
+.Disclaimer p {
+    text-align: center;
+    font-size: 64px;
+}
+
+footer {
+    padding: 110px 0 37px 0;
+    position: relative;
+    background: var(--white);
+}
+
+footer .strappo{
+    background-image: url(../img/strappoPagina.png);
+    width: 100%;
+    height: 200px;
+    top: -100px;
+    position: absolute;
+}
+
+footer .footerContenuto {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .footerContenuto .sezioneFooter.destra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer .footerContenuto .sezioneFooter .titolo {
+    color: var(--white);
+    background-color: var(--yellow);
+    font-size: 32px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+footer .footerContenuto .sezioneFooter .testo {
+    font-size: 24px;
+    font-family: "Special Elite";
 }
