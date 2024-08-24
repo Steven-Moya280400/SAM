@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Impact Label';
+    src: url('Impact_Label/ImpactLabel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Impact Label Reversed';
+    src: url('Impact_Label/ImpactLabelReversed.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aku & Kamu';
+    src: url('aku_kamu/Aku&Kamu.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
