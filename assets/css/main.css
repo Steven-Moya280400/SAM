@@ -36,6 +36,8 @@ body {
     margin: 0;
     padding: 0;
     background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .btnPrimary {
@@ -74,12 +76,12 @@ header .lstMenu .itemMenu.active {
     background-color: var(--yellow);
 }
 
-section{
+section {
     overflow: hidden;
 }
 
 section:not(:first-child) {
-    margin-top: 190px;
+    padding-top: 190px;
 }
 
 .improntaDigitaleContenitore {
@@ -99,7 +101,7 @@ section:not(:first-child) {
     width: 100%;
 }
 
-.InformazioniBanner .imgBanner{
+.InformazioniBanner .imgBanner {
     max-width: 100%;
 }
 
@@ -117,6 +119,13 @@ section:not(:first-child) {
 
 .Banner {
     text-align: center;
+}
+
+.Banner .titolo {
+    font-family: "Aku & Kamu";
+    margin-bottom: 70px;
+    color: var(--black);
+    font-size: 64px;
 }
 
 .Banner .imgBanner {
@@ -152,13 +161,88 @@ section:not(:first-child) {
     font-size: 64px;
 }
 
+.CollegamentoBanner .collegamento {
+    max-width: 760px;
+    width: 100%;
+    display: block;
+}
+
+.CollegamentoBanner .collegamento.destra {
+    margin-left: auto;
+}
+
+.CollegamentoBanner .collegamento .titolo {
+    background-color: var(--black);
+    color: var(--white);
+    width: fit-content;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.CollegamentoBanner .collegamento .immagine {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.CollegamentoBanner .collegamento .credito {
+    color: var(--black);
+    width: fit-content;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: "Special Elite";
+    text-align: right;
+    width: 100%;
+}
+
+.LstCollegamentoBanner .LstCollegamentoBannerContenuto{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Torna+section {
+    padding-top: 11px;
+}
+
+.InformazioniProgetto .informazioniProgettoContenuto {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.InformazioniProgetto .informazioniProgettoContenuto .informazioni .titolo {
+    font-family: "Special Elite";
+    font-size: 16px;
+}
+
+.InformazioniProgetto .informazioniProgettoContenuto .informazioni .titolo {
+    margin-bottom: 82px;
+    font-family: "Aku & Kamu";
+    font-size: 47px;
+}
+
+.InformazioniProgetto .informazioniProgettoContenuto .caratteristiche .caratteristicaTitolo {
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 30px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.InformazioniProgetto .informazioniProgettoContenuto .caratteristiche .caratteristicaDescrizione {
+    font-family: "Special Elite";
+    color: var(--black);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
 footer {
     padding: 110px 0 37px 0;
     position: relative;
     background: var(--white);
 }
 
-footer .strappo{
+footer .strappo {
     background-image: url(../img/strappoPagina.png);
     width: 100%;
     height: 200px;
