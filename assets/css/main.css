@@ -38,6 +38,8 @@ body {
     background: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .btnPrimary {
