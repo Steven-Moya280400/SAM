@@ -53,6 +53,9 @@ body {
 header {
     background: url(../img/headerBackground.png);
     padding-bottom: 68px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 header .lstMenu {
@@ -74,6 +77,10 @@ header .lstMenu .itemMenu a {
 
 header .lstMenu .itemMenu.active {
     background-color: var(--yellow);
+}
+
+main {
+    padding-top: 158px;
 }
 
 section {
@@ -161,17 +168,17 @@ section:not(:first-child) {
     font-size: 64px;
 }
 
-.CollegamentoBanner .collegamento {
+.Fotografia .fotografiaContenuto {
     max-width: 760px;
-    width: 100%;
+    width: fit-content;
     display: block;
 }
 
-.CollegamentoBanner .collegamento.destra {
+.Fotografia .fotografiaContenuto.destra {
     margin-left: auto;
 }
 
-.CollegamentoBanner .collegamento .titolo {
+.Fotografia .fotografiaContenuto .titolo {
     background-color: var(--black);
     color: var(--white);
     width: fit-content;
@@ -179,12 +186,13 @@ section:not(:first-child) {
     font-size: 24px;
 }
 
-.CollegamentoBanner .collegamento .immagine {
+.Fotografia .fotografiaContenuto .immagine {
     margin-bottom: 30px;
-    width: 100%;
+    margin-left: auto;
+    max-width: 100%;
 }
 
-.CollegamentoBanner .collegamento .credito {
+.Fotografia .fotografiaContenuto .credito {
     color: var(--black);
     width: fit-content;
     margin-bottom: 40px;
@@ -194,10 +202,15 @@ section:not(:first-child) {
     width: 100%;
 }
 
-.LstCollegamentoBanner .LstCollegamentoBannerContenuto{
+.LstFotografia .LstFotografiaContenuto {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.Torna .btnPrimary {
+    position: fixed;
+    z-index: 1000;
 }
 
 .Torna+section {
@@ -221,6 +234,13 @@ section:not(:first-child) {
     font-size: 47px;
 }
 
+.InformazioniProgetto .informazioniProgettoContenuto .informazioni .descrizione,
+.InformazioniProgetto .informazioniProgettoContenuto .informazioni .descrizione a {
+    font-family: "Special Elite";
+    font-size: 16px;
+    color: var(--black);
+}
+
 .InformazioniProgetto .informazioniProgettoContenuto .caratteristiche .caratteristicaTitolo {
     background-color: var(--yellow);
     color: var(--black);
@@ -234,6 +254,57 @@ section:not(:first-child) {
     color: var(--black);
     font-size: 16px;
     margin-bottom: 40px;
+}
+
+.GalleriaDiPittura .lstPittura {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.GalleriaDiPittura .lstPittura .pitturaContenuto {
+    position: relative;
+}
+
+.GalleriaDiPittura .lstPittura .pitturaContenuto .nome {
+    position: absolute;
+    top: 140px;
+    text-align: center;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 16px;
+}
+
+.GalleriaDiPittura .lstPittura .pitturaContenuto .descrizione {
+    font-family: "Special Elite";
+    position: absolute;
+    bottom: 152px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--black);
+    font-size: 12px;
+}
+
+.DiPuiSu .diPuiSuContenuto {
+    text-align: center;
+}
+
+.DiPuiSu .diPuiSuContenuto .titolo {
+    font-family: "Special Elite";
+    color: var(--black);
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+
+.DiPuiSu .diPuiSuContenuto .collegamento {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 24px;
+    padding: 4px 0;
 }
 
 footer {
